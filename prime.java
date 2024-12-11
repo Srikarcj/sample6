@@ -1,14 +1,14 @@
 public class prime {
     public static void main(String[] args) {
-        for (int num = 1; num <= 100; num++) {
+        for (int num = 2; num <= 100; num++) {
             boolean isPrime = true;
-            for (int i = 2; i <= num / 2; i++) {
+            for (int i = 2; i <= Math.sqrt(num); i++) {  // Optimized to check up to the square root of num
                 if (num % i == 0) {
                     isPrime = false;
                     break;
                 }
             }
-            if (isPrime && num > 1) {
+            if (isPrime) {
                 System.out.println(num);
             }
         }
