@@ -1,6 +1,6 @@
 public class prime {
     public static void main(String[] args) {
-        // Loop through numbers from 2 to 100
+        // Loop through numbers starting from 2 (since 1 is not prime)
         for (int num = 2; num <= 100; num++) {
             boolean isPrime = true;
             
